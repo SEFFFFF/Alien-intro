@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Space background with panning animation */
+div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(space.png);
+    animation: panning 45s infinite linear;
+}
+
+@keyframes panning {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.text {
+    position: absolute;
+    top: 110px;
+    left: auto;
+    right: 0;
+    z-index: 20;
+    height: auto;
+    width: auto;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 250px;
+    color: white;
+    text-align: center;
+    background: none;
+  }
+
+.credits {
+    position: absolute;
+    top: 550px;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    height: auto;
+    width: auto;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    background: none;
+}
+
+.visible {
+    opacity: 1;
+}
