@@ -5,7 +5,9 @@ body {
     height: 100vh;
 }
 
-/* Space background with panning animation */
+
+
+/*BACKGROUND ANIMATION*/
 .test {
     position: relative;
     height: 100vh;
@@ -24,6 +26,10 @@ body {
     }
 }
 
+
+
+/*CAST LIST AND TITLE CARD WITH TRANSITIONS
+"VISIBLE" IS FOR CAST LIST, "VISIBLE2" FOR TITLE CARD*/
 .text {
     position: absolute;
     display: flex;
@@ -80,24 +86,77 @@ body {
     color: white;
 }
 
+
+
+/*LANDING PAGE*/
 .menu {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-image: url(menu_bg.png);
     z-index: 100;
-    opacity: 0;
+    opacity: 1;
 }
 
-.start {
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 777px;
+    margin-left: 1468px;
+    width: 357px;
+    margin-bottom: 13px;
+}
+
+.link {
     position: relative;
     display: block;
-    width: 200px;
-    height: 60px;
-    background-color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    top: 35%;
-    left: 45%;
+    width: 167px;
+    background-color: #5DC24C;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    color: #050503;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.link:hover {
+    background-color: #050503;
+    color: #5DC24C;
+    border: 3px solid #5DC24C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+}
+
+.play {
+    position: relative;
+    display: block;
+    width: 357px;
+    background-color: #5DC24C;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 10px;
+    color: #050503;
+    text-decoration: none;
+    box-sizing: border-box;
+    left: 1468px;
+}
+
+.play:hover {
+    background-color: #050503;
+    color: #5DC24C;
+    border: 3px solid #5DC24C;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 7px;
+    cursor: pointer;
 }
