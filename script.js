@@ -5,15 +5,22 @@ document.addEventListener("DOMContentLoaded",()=>{
     let crew_index=0;
     let alien_index=0;
 
-    /*FUNCTION TO HIDE ALL TEXT*/
+    const play_button=document.querySelector(".play");
+    const menu=document.querySelector(".menu");
+
+
+
+    /*FUNCTION THAT HIDES ALL TEXT*/
     function hide_text(){
         const text=document.querySelectorAll(".test>div")
         text.forEach((textelement)=>{
             textelement.classList.remove("visible"); 
         });
     };
+
+
    
-    /*FUNCTION TO LOOP THROUGH CAST LIST*/
+    /*FUNCTION THAT LOOPS THROUGH CAST LIST*/
     function show_text(){
         hide_text();
         crew_index++;
@@ -25,7 +32,9 @@ document.addEventListener("DOMContentLoaded",()=>{
         } 
     }
 
-    /*FUNCTION TO LOOP THROUGH TITLE CARD LETTERS*/
+
+
+    /*FUNCTION THAT LOOPS THROUGH TITLE CARD LETTERS*/
     function title_card(){ 
         hide_text();
         alien_index++;
@@ -36,7 +45,19 @@ document.addEventListener("DOMContentLoaded",()=>{
         } 
     }
 
+
+
+    /*PLAY AND STOP BUTTON*/
+    play_button.addEventListener("click",()=>{
+        
+        menu.classList.add("hide");
+        console.log("Howdy partner");
+        /*background_music.play();*/
+        
+        setTimeout(show_text, 4500);
+        setTimeout(title_card, 14000);       
+    });
+
     hide_text();
-    setTimeout(show_text, 4500);
-    setTimeout(title_card, 14000);
+    
 });

@@ -28,8 +28,7 @@ body {
 
 
 
-/*CAST LIST AND TITLE CARD WITH TRANSITIONS
-"VISIBLE" IS FOR CAST LIST, "VISIBLE2" FOR TITLE CARD*/
+/*CAST LIST AND TITLE CARD WITH TRANSITIONS*/
 .text {
     position: absolute;
     display: flex;
@@ -75,12 +74,12 @@ body {
     transition-duration: 0.7s;
 }
 
-.visible {
+.visible {  /*FOR CAST LIST TRANSITION*/                   
     opacity: 1;
     transition-duration: 0.7s;
 }
 
-.visible2 {
+.visible2 { /*FOR TITLE CARD TRANSITION*/
     opacity: 1;
     transition-duration: 5s;
     color: white;
@@ -159,4 +158,8 @@ body {
     padding-bottom: 24px;
     padding-left: 7px;
     cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
 }
