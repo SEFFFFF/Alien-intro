@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     let alien_index=0;
 
     const play_button=document.querySelector(".play");
+    const stop_button=document.querySelector(".stop");
     const menu=document.querySelector(".menu");
+    const music=new Audio("opcred.mp3");
 
 
 
@@ -30,6 +32,9 @@ document.addEventListener("DOMContentLoaded",()=>{
             member.classList.add("visible");
             setTimeout(show_text, 5500);
         } 
+        else {
+            stop_button.click();
+        }
     }
 
 
@@ -49,14 +54,21 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     /*PLAY AND STOP BUTTON*/
     play_button.addEventListener("click",()=>{
-        
         menu.classList.add("hide");
         console.log("Howdy partner");
-        /*background_music.play();*/
+        music.play();
         
         setTimeout(show_text, 4500);
         setTimeout(title_card, 14000);       
     });
+
+    stop_button.addEventListener("click",()=>{
+        menu.classList.remove("hide");
+        music.pause();
+        music.currentTime = 0;    
+        crew_index=0;
+        alien_index=0;
+   });
 
     hide_text();
     

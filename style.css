@@ -95,6 +95,9 @@ body {
     background-image: url(menu_bg.png);
     z-index: 100;
     opacity: 1;
+    transition: ease-in;
+    transition: ease-out;
+    transition-duration: 0.5s;
 }
 
 .button {
@@ -162,4 +165,5 @@ body {
 
 .hide {
     opacity: 0;
+    transition-duration: 0.5s;
 }
