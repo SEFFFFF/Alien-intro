@@ -55,9 +55,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     /*PLAY AND STOP BUTTON*/
     play_button.addEventListener("click",()=>{
         menu.classList.add("hide");
-        console.log("Howdy partner");
         music.play();
-        
         setTimeout(show_text, 4500);
         setTimeout(title_card, 14000);       
     });
