@@ -1,5 +1,5 @@
 
-# Movie intro
+# Alien intro
 
 This project consists of the intro to the 1979 sci fi horror classic "Alien". I remade this intro as a school project for my development courses, it is a 45 second long intro.
 
